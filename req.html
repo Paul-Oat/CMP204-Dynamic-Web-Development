@@ -1,0 +1,130 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Requirements page</title>
+	<link rel="stylesheet" href="reqStyle.css">
+</head>
+<body>
+
+<h1>CMP204 Requirements Page - Unit 2 Assessment</h1>
+
+<p>If you have not met a requirement, do not delete it from the table.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th class="reqCol">Requirement</th>
+      <th class="metCol">How did you meet this requirement?</th>
+      <th class="fileCol">File name(s), line no.</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>HTML, CSS, JavaScript has been contained within separate files.</td>
+      <td>
+        Independent files for HTML, CSS and JavaScript
+      </td>
+      <td>HTML<br>
+        (Index.php, About.html, Albums.html, cookie_Policy.html)
+        <br>
+        CSS<br>
+        (Style.css)   
+        <br>
+        JavaScript<br>
+        (code.js, messagesys.js, Accountsrc.js, UpdateDat.js)<br>
+      </td>    
+      </td>
+    </tr>
+
+    <tr>
+      <td>A clear use of HTML5.</td>
+      <td>The website is using  HTML5 this is indicated by the !doctype html at the top of every page</td>
+      <td>index.php(1), About.html(1), Albums.html(1), cookie_Policy.html(1), Admin.php(7), Change.php(84), Account.php(10), login.php(9), Chat.php(9)</td>
+    </tr>
+    <tr>
+      <td>Use of the Bootstrap framework providing a responsive layout.</td>
+      <td>Bootstrap 4 has been used throughout the webpage making use of nav bars, Carousel's, Containers, Thumbnails and making use of The Bootstrap Grid </td>
+      <td>index.php(17-40, 50-91,108 -148),About.html(17-40, 54-87), cookie_Policy.html(16-39, 60-107, 50-58), Albums.html(17-39, 51-54, 56-161), chat.php(24-59) 
+        Change.php(100-1303 143-199) Admin.php(23-57, 67-112, 126-161) Account.php(26-74, 80-104) login.php(25-44) </td>
+    </tr>
+    <tr>
+      <td>Use of JavaScript to manipulate the DOM based on an event.</td>
+      <td>Made use of pure Java Script in a "More Info button" which adds a blurb of text when clicked. It also removes this text when clicked again.
+        When the page loads the breakup function calculates how many days since The White Stripes broke up and displays to the user. 
+        When the thumbnail image is clicked the related webpage is loaded</td>
+      <td>index.php(100-103) code.js(66-79), index.php(97-98) code.js(36-62), index.php(136,122,116) code.js(14-24), admin.php(118-120) code.js(42-62), admin.php(121-122) code.js(66-79), admin.php(139,151,163) </td>
+    </tr>
+    <tr>
+      <td>Use of jQuery in conjunction with the DOM.</td>
+      <td>Cookie approve message disapears when apporved by clicking "Okay".
+          Send chat message sends message to php file when submit is clicked.
+          Update Details fetches details from html 5 form in order to send to php file when submit is clicked  </td>
+      <td>code.js(1-12) index.php(41-47) About.html(41-47), cookie_Policy(41-47),Albums.html(43-49), chat.php(62-69), Change.php(135-141), Admin.php(61-68), Acount.php(63-69), login.php(48-54)|
+          chat.php(73-76), messagesys.js(18-28) |  UpdateDat.js(1-23), change.php(168-199) </td>
+    </tr>
+    <tr>
+      <td>Use of AJAX (pure JavaScript i.e. without the use of a library).</td>
+      <td>Chat system allows the user to see posted messages as well as delete messages.
+         Both functions are written in pure js </td>
+      <td>chat.php(70), messagesys.js(1-16) | chat.php(78-80), messagesys.js(32-39)</td>
+    </tr>
+    <tr>
+      <td>Use of the jQuery AJAX function.</td>
+      <td>JQuery Ajax fetches account deatils and displays them on Acount Information page. 
+          Messages are posted to chat box through the use of JQuery Ajax,<br>
+          User Details updated on Update Details Page through the use of JQuery Ajax </td>
+      <td>chat.php(73-76), messagesys.js(18-28) | Account.php(72),  Accountsrc.js(1-16) | Change.php(168-198), UpdateDat.js(1-24)  </td>
+    </tr>
+    <tr>
+      <td>User login functionality (PHP/MySQL).</td>
+      <td>Users can login by entering their username and password. 
+        If incorect, user is given an error message. 
+        Password is compared to a salted and hashed version stored in the MYSQL database. When logged in user is taken to Admin Page </td>
+      <td>login.php(134-144, 1,122) | login.php(118) | login.php(93)</td>
+    </tr>
+    <tr>
+      <td>Ability to select (SELECT), add (INSERT), edit (UPDATE) and delete (DELETE) information from a database (PHP/MySQL).</td>
+
+      <td>The SELECT statement is used during login, to retrieve messages and to retrieve account information 
+          The INSERT statement is used when a new account is created and when a user post a message 
+          The UPDATE statement is used when a user makes a chnage to their details
+          The DELETE statement is used when a user deletes a message or deletes their account </td>
+      <td>Chat.php(70), getmsg.php, login.php(134-143, 56-123) <br> | login.php(146-174), signUP.php | Change.php(168-190), UpdateDetails.php | chat.php(78-80)  delMsg.php, Change.php(144-163)  DeleteAcc.php</td>
+    </tr>
+    <tr>
+      <td>Consideration of GDPR and the Cookie Law.</td>
+      <td>Site wide Cookie policy is implemented, once user accepts cookies the message is no longer displayed. If the user selects learn more cookie and GDPR privicy policy are displayed 
+        Made use of standard Templates for Cookie and GDPR policy. 
+        Apple style privacy indicators to tell the users what data we collect </td>
+      <td>code.js(1-12) index.php(41-47) About.html(41-47), cookie_Policy(41-47),Albums.html(43-49), chat.php(62-69), Change.php(135-141), Admin.php(61-68), Acount.php(63-69), login.php(48-54) |<br> 
+      cookie_Policy.html | cookie_Policy.html(89-114), GDPR.pdf</td>
+    </tr>
+    <tr>
+      <td>SQL queries written as prepared statements.</td>
+      <td>All PHP statements which comunicate with MYSQL are writen as Prepared staements
+      </td>
+      <td>postmsg.php(18, 33-41), signUP.php(8, 26- 55), UpdateDetails.php(18, 56-61, 85-95), DeleteAcc.php(24, 31-36, 45-58, 70), delMsg.php(17, 23-32),getAccount.php(14, 20-34), getmsg.php(18, 24-40), login.php(78, 85-89, 114-115), Change.php(33, 40-45, 54-57, 60-67, 78)</td>
+    </tr>
+    <tr>
+      <td>Passwords should be salted and hashed.</td>
+      <td> All passwords are hashed in the password function with the PASSWORD_DEFAULT salt </td>
+      <td> signUP.php(13), UpdateDetails.php(53)</td>
+    </tr>
+    <tr>
+      <td>User input is sanitised.</td>
+      <td>All user input goes through test_input function which sanitises user input </td>
+      <td>postmsg.php(24-28), signUP.php(17-21), UpdateDetails.php(25-29), DeleteAcc.php(12-17), login.php(66-70), Change.php(21-26)</td>
+    </tr>
+  </tbody>
+
+
+
+</table>
+</body>
+</html>
+
+
+
